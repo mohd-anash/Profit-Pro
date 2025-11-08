@@ -183,15 +183,15 @@ thead th td {
 }
 
 .progress-bar {
-    margin-top: 8px;
-    background-color: #e5e5e5;
-    border-radius: 20px;
-    height: 16px;
+    // margin-top: 8px;
+    background-color: rgba(83, 56, 158, 1);
+    // border-radius: 20px;
+    // height: 16px;
 
-    .progress-indicator {
-        background: linear-gradient(90deg, #00eaff 0%, #7e17e5 100%);
-        height: 16px;
-    }
+    // .progress-indicator {
+    //     background: linear-gradient(90deg, #00eaff 0%, #7e17e5 100%);
+    //     height: 16px;
+    // }
 }
 
 .rounded-full {
@@ -485,6 +485,15 @@ thead th td {
     }
 
 
+    &.btnBlankGray {
+        padding: 7px 15px;
+        color: rgba(24, 34, 48, 1);
+        font-size: 14px;
+        border: 1px solid rgba(208, 213, 221, 1);
+        background-color: transparent;
+    }
+
+
     &.btnLightBlue {
         padding: 7px 15px;
         font-size: 14px;
@@ -544,9 +553,111 @@ thead th td {
             margin-block-start: 68px;
             padding-block-start: 10px;
             padding-block-end: 0;
-            height: 100vh;
+            height: calc(100vh - 68px);
             position: relative;
             overflow: auto;
+
+            .allCompany {
+                padding: 0px 10px;
+
+                .section-header {
+                    color: rgb(52, 64, 84);
+                    font-size: 12px;
+                    font-weight: 600;
+                    background: rgba(242, 244, 247, 1);
+                    padding: 7px 8px;
+                    border-radius: 8px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                }
+
+                .list {
+                    padding: 0;
+                    margin: 0;
+
+                    li {
+                        padding: 5px 7px;
+                        margin: 0;
+                        color: rgba(66, 48, 125, 1);
+                        font-size: 12px;
+                        font-weight: 500;
+                        list-style: none;
+                        cursor: pointer;
+
+                        &:hover {
+                            background-color: rgba(244, 235, 255, 1);
+                            border-radius: 8px;
+                        }
+                    }
+                }
+            }
+
+            .settings {
+                padding: 0px 10px;
+
+                .section-header {
+                    color: rgb(52, 64, 84);
+                    font-size: 12px;
+                    font-weight: 600;
+                    background: rgba(242, 244, 247, 1);
+                    padding: 7px 8px;
+                    border-radius: 8px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                }
+
+                .list {
+                    padding: 0;
+                    margin: 0;
+
+                    li {
+                        padding: 8px 8px;
+                        margin: 0;
+                        color: rgba(66, 48, 125, 1);
+                        font-size: 12px;
+                        font-weight: 500;
+                        list-style: none;
+                        cursor: pointer;
+
+                        &:hover {
+                            background-color: rgba(244, 235, 255, 1);
+                            border-radius: 8px;
+                        }
+                    }
+                }
+            }
+
+            .userAvtar {
+                display: flex;
+                padding: 10px 10px;
+                gap: 10px;
+                align-items: center;
+
+                .avatar {
+                    width: 45px;
+                    height: 45px;
+                    background-color: rgba(95, 179, 141, 1);
+                    border-radius: 100px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+
+                .avtarRight {
+                    .name {
+                        color: rgba(52, 64, 84, 1);
+                        font-size: 12px;
+                        font-weight: 600;
+                    }
+
+                    .role {
+                        font-size: 8px;
+                        font-weight: 400;
+                    }
+                }
+            }
 
 
         }
@@ -574,14 +685,30 @@ thead th td {
 
             .header-content-left {
                 display: flex;
-                align-items: stretch;
+                align-items: center;
                 margin-block: auto;
+
+                .pageBack {
+                    border: 1px solid rgba(208, 213, 221, 1);
+                    border-radius: 8px;
+                    padding: 8px 12px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    cursor: pointer;
+                    gap: 5px;
+                    color: rgba(52, 64, 84, 1);
+                    font-size: 14px;
+                    font-weight: 600;
+                    margin-right: 10px;
+                }
 
                 .pageName {
                     h4 {
                         margin: 0;
                         font-size: 24px;
-                        color: $primaryColor;
+                        font-weight: 600;
+                        color: rgba(24, 34, 48, 1);
                     }
                 }
             }

@@ -1,0 +1,290 @@
+.app-content {
+    .companyInnerPage {
+        .totalOutPut {
+            display: flex;
+            padding: 16px;
+            border-radius: 16px;
+            gap: 20px;
+
+            &.totalOutPutCompanies {
+                background-color: rgba(236, 253, 243, 1);
+
+                .icon {
+                    background-color: rgba(52, 199, 89, 0.1);
+                }
+            }
+
+            &.totalOutPutRevenue {
+                background-color: rgba(244, 235, 255, 1);
+
+                .icon {
+                    background-color: rgba(175, 82, 222, 0.1);
+                }
+            }
+
+            &.totalOutPutProfit {
+                background-color: rgba(255, 250, 235, 1);
+
+                .icon {
+                    background-color: rgba(255, 149, 0, 0.1);
+                }
+            }
+
+            &.totalOutPutScore {
+                background-color: rgba(224, 242, 254, 1);
+
+                .icon {
+                    background-color: rgba(185, 230, 254, 1);
+                }
+            }
+
+            .icon {
+                border-radius: 17px;
+                width: 59px;
+                height: 59px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .iconContent {
+                p {
+                    color: rgba(102, 112, 133, 1);
+                    font-size: 12px;
+                    font-weight: 500;
+                    margin-bottom: 6px;
+                }
+
+                h5 {
+                    color: rgba(52, 64, 84, 1);
+                    font-size: 24px;
+                    font-weight: 600;
+
+                    span {
+                        color: rgba(102, 112, 133, 1);
+                        font-size: 12px;
+                        font-weight: 500;
+                        margin-bottom: 0px;
+                    }
+                }
+            }
+        }
+    }
+
+    .cpmpanyTabs {
+        .nav {
+            background: rgba(208, 213, 221, 1);
+            padding: 6px 8px;
+            margin: 0;
+            border-radius: 12px;
+            margin-top: 20px;
+
+            li {
+                .nav-link {
+                    color: rgba(52, 64, 84, 1);
+                    font-size: 12px;
+                    font-weight: 500;
+
+                    &.active {
+                        background-color: #fff;
+                        color: rgba(24, 34, 48, 1);
+                    }
+                }
+            }
+        }
+
+        .reportsTabsSection {
+            .financialReports {
+                .dataAnalyticesMaintitle {
+                    margin-bottom: 10px;
+
+                    h4 {
+                        color: rgba(52, 64, 84, 1);
+                        font-size: 14px;
+                        font-weight: 600;
+                    }
+                }
+
+                .ananlyticesDataColum {
+                    background-color: rgba(242, 244, 247, 1);
+                    border-radius: 16px;
+                    padding: 16px;
+
+                    p {
+                        color: rgba(102, 112, 133, 1);
+                        font-size: 12px;
+                        font-weight: 500;
+                        margin-bottom: 5px;
+                    }
+
+                    h3 {
+                        color: rgba(52, 64, 84, 1);
+                        font-size: 24px;
+                        font-weight: 600;
+                    }
+                }
+
+                .financeTabsReportsAna {
+                    .nav {
+                        display: inline-flex;
+                    }
+
+                    .FinancialSection {
+                        .financialList {
+                            display: flex;
+                            gap: 20px;
+                            margin-bottom: 20px;
+                            border-bottom: 1px solid #ddd;
+                            padding: 10px 0px;
+
+                            .icon {
+                                width: 59px;
+                                height: 59px;
+                                background: rgba(0, 122, 255, 0.1);
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                border-radius: 16px;
+                                color: rgba(23, 92, 211, 1);
+                            }
+
+                            .details {
+                                margin-right: auto;
+
+                                h4 {
+                                    color: rgba(24, 34, 48, 1);
+                                    font-size: 20px;
+                                    font-weight: 600;
+                                    margin-bottom: 5px;
+                                }
+
+                                p {
+                                    color: rgba(52, 64, 84, 1);
+                                    font-size: 16px;
+                                    font-weight: 400;
+                                }
+
+                                .listingDetailsInfo {
+                                    display: flex;
+                                    margin-top: 10px;
+
+                                    .date {
+                                        color: rgba(102, 112, 133, 1);
+                                        font-size: 14px;
+                                        font-weight: 400;
+                                        margin-right: 15px;
+                                        display: inline-flex;
+                                        align-items: center;
+                                        gap: 5px;
+
+
+                                        i {
+                                            font-size: 16px;
+                                        }
+                                    }
+
+                                    .pages {
+                                        color: rgba(102, 112, 133, 1);
+                                        font-size: 14px;
+                                        font-weight: 400;
+                                        margin-right: 15px;
+                                        display: inline-flex;
+                                        align-items: center;
+                                        gap: 5px;
+
+
+                                        i {
+                                            font-size: 16px;
+                                        }
+                                    }
+
+                                    .status {
+                                        background: rgba(52, 199, 89, 0.1);
+                                        color: rgba(23, 178, 106, 1);
+                                        font-size: 12px;
+                                        font-weight: 600;
+                                        padding: 4px 12px;
+                                        border-radius: 100px;
+                                    }
+                                }
+                            }
+
+                            .btnListFinance {
+                                display: flex;
+                                align-items: start;
+                                gap: 10px;
+                                margin-left: 50px;
+
+                                button {
+                                    display: flex;
+                                    gap: 5px;
+                                }
+                            }
+                        }
+
+                        .fincialSummry {
+                            .summryRow {
+                                margin-bottom: 20px;
+
+                                h4 {
+                                    color: rgba(24, 34, 48, 1);
+                                    font-size: 16px;
+                                    font-weight: 500;
+                                    position: relative;
+                                    padding-left: 20px;
+
+                                    &::before {
+                                        content: '';
+                                        position: absolute;
+                                        left: 0;
+                                        top: 0;
+                                        width: 6px;
+                                        height: 100%;
+                                        background-color: rgba(23, 92, 211, 1);
+                                        border-radius: 100px;
+                                    }
+                                }
+
+                                p {
+                                    color: rgba(52, 64, 84, 1);
+                                    font-size: 16px;
+                                    font-weight: 400;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .AssumptionsSection {
+            .assumptionSectionTabs {
+                .nav {
+                    display: inline-flex;
+                }
+
+                .incomeStatementSection {
+                    .editAsumptionBtnSec {
+                        display: flex;
+                        align-items: end;
+                        justify-content: end;
+                        margin-bottom: 20px;
+
+                        button {
+                            display: flex;
+                            gap: 10px;
+                            align-items: center;
+                            justify-content: right;
+                        }
+                    }
+
+                    .feilds {
+                        margin-bottom: 15px;
+                    }
+                }
+            }
+        }
+
+
+    }
+}
